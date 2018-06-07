@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width">
 	<title>Scavenger Hunt</title>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -19,7 +20,7 @@
 <body>
         <div class="container">
         	<!-- Instructions on how to do the hunt! -->
-            <div class="row info text-center">
+            <div id="info" class="row info text-center">
                 <div class="col-sm-12">
                     <h1 class="text-center  mg-lg">
                     👶 <br/> Scavenger Hunt
@@ -46,15 +47,70 @@
                     </div>
                 </div>
                 <div class="col-sm-12 start">
-                	<a href="">👍</a>
+                	<a id="start" class="submit">👍</a>
                 </div>
             </div>
         </div>
         <!-- Start Q1 -->
 
-    <!-- OWL Carousel slider config -->
+        <div class="container">
+            <div id="q1" class="question">
+                <h2>
+                    Hunt 1
+                </h2>
+                <p>
+                    Dramatically engineer tactical collaboration and idea-sharing through multifunctional outsourcing. Synergistically optimize standards compliant technology through client-centric total linkage. Conveniently customize high-quality relationships rather than front-end.
+                </p>
+                <input id="answer1" type="text" name="Answer1">
+                <a id="yes1" class="submit">👍</a>
+            </div>
+        </div>
+        <div class="container">
+            <div id="q2" class="question">
+                <h2>
+                    Hunt 2
+                </h2>
+                <p>
+                    Dramatically engineer tactical collaboration and idea-sharing through multifunctional outsourcing. Synergistically optimize standards compliant technology through client-centric total linkage. Conveniently customize high-quality relationships rather than front-end.
+                </p>
+                <input id="answer2" type="text" name="Answer2">
+                <a id="yes2" class="submit">👍</a>
+            </div>
+        </div>
     <script>
     	    $(document).ready(function() {
+
+                $("#q1").hide() 
+                $("#q2").hide() 
+                $("#q3").hide() 
+                $("#q4").hide() 
+                $("#start").click(function(event) {
+                        $("#info").fadeOut(500)
+                        $("#q1").delay(500).fadeIn(500)                     
+                });
+                $("#yes1").click(function(event) {
+                    if ($("#answer1").val().toUpperCase()=="ANSWER") {
+                        $("#q1").fadeOut(500)                      
+                        $("#q2").delay(500).fadeIn(500)  
+                        }
+                    else{
+                        $("#q1").addClass("shake").delay(500).queue(function(){
+                          $("#q1").removeClass("shake");
+                          $("#q1").dequeue();
+                    })
+                        $("#answer1").val("")
+                    }
+                });
+                
+                
+
+
+
+
+
+
+
+     // OWL Carousel slider config                 
         $('.owl-nav').owlCarousel({
             margin: 10,
             center: true,
@@ -81,7 +137,8 @@
            
         });
 
-    })
+    });
+
     </script>
 </body>
 </html>
