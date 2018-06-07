@@ -5,16 +5,17 @@ body {
 
 h1{
 	    color: #fdfdfd;
-	    font-size:4em;
+	    font-size:4vw;
 }
 h2{
+	font-size: 3vw;
 	 color: #fdfdfd;
 
 }
 p{
 	     color: #000000;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.2vw;
 }
 .steps{
 	padding:15px;
@@ -25,13 +26,13 @@ p{
 .start{
 	margin-top:30px;
 	padding-top:30px;
-	font-size:3em;
+	font-size:3vw;
 }
 .container{
   position: relative;
   top: 50%;
   transform: perspective(1px) translateY(-50%);
-  max-width:700px;
+  max-width:900px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -45,19 +46,25 @@ p{
 {
 	h1{
 		    color: #fdfdfd;
-		    font-size:6em;
+		    font-size:7vw;
 	}
 	h2{
-		font-size:4em;
+		font-size:4.2vw;
 		 color: #fdfdfd;
 
 	}
 	p{
 		     color: #000000;
 	    font-weight: 400;
-	    font-size: 2.2em;
+	    font-size: 2.5vw;
 	}
 	.start{
-	font-size:5em;
+	font-size:8vw;
+}
+.container{
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  max-width:650px;
 }
 }
