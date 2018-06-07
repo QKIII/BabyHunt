@@ -169,8 +169,14 @@ p{
 }
 .question{
 	    color: #888888;
+	    text-align:  center;
 }
-
+.question>h1{
+	margin-top: -8px;
+}
+.question>svg>path{
+	fill:white;
+}
 
 @keyframes shake {
   0% {
