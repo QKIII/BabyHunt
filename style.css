@@ -16,7 +16,7 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background: linear-gradient(270deg, #eb67f9, #5cfbee);
+    background: linear-gradient(270deg, #E938FC, #30E3FE);
     background-size: 400% 400%;
     -webkit-animation: AnimationName 15s ease infinite;
     -moz-animation: AnimationName 15s ease infinite;
@@ -499,7 +499,7 @@ p{
 	font-family: 'Assistant', sans-serif;
 }
 .container{
-	max-width:900px;
+	max-width:700px;
 }
 .hero-bloc-text{
 	font-size:55px;
