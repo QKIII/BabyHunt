@@ -1,3 +1,6 @@
+*:focus {
+    outline: none;
+}
 html{
 	overflow-x: hidden;
 }
@@ -80,7 +83,8 @@ body {
     background: #ffffff;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #000000;
+    background: none;
+    border: 2px solid white;
 }
 
 .submit{
@@ -94,7 +98,7 @@ input, optgroup, select, textarea {
     margin-top: 9px;
     padding: 20px;
     border-radius: 5px;
-    border: none;
+    border: 5px solid white;
     height: 55px;
     width:  100%;
     font-family:  'Assistant', sans-serif;
@@ -102,6 +106,26 @@ input, optgroup, select, textarea {
     letter-spacing: 0px;
     font-weight: 900;
     text-transform:  uppercase;
+    background: none;
+    color: white;
+    text-align:center
+}
+input:focus{
+    margin-top: 9px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 5px solid white;
+    height: 55px;
+    width:  100%;
+    font-family:  'Assistant', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0px;
+    font-weight: 900;
+    text-transform:  uppercase;
+    background: none;
+    color: white;
+    text-align:center
+    border-color:white;
 }
 
 
@@ -114,7 +138,8 @@ p{
 }
 
 h1{
-	    color: #fdfdfd;
+	    text-align:  center;
+	    color: #ffffff;
 	    font-size:4vw;
 }
 h2{
@@ -123,11 +148,27 @@ h2{
 	color: #fdfdfd;
 }
 p{
-	     color: #000000;
+	     color: #fbfbfb;
 	     font-weight: 400;
 	     font-size: 1.2vw;
 	     text-align:  center;
 	     mix-blend-mode: multiply;
+}
+
+.start>p{
+	    letter-spacing: 9px;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.steps{
+	margin-top: 40px;
+}
+.question.shake{
+
+	  animation: shake 0.5s infinite;
+}
+.question{
+	    color: #888888;
 }
 
 
@@ -151,10 +192,11 @@ p{
     transform: translate(0);
   }
 }
-.question.shake{
 
-	  animation: shake 0.5s infinite;
-}
+
+
+
+
 /*Mobile Responsiveness*/
 @media (max-width: 769px)
 {
@@ -163,14 +205,15 @@ p{
 		    font-size:40px;
 	}
 	h2{
-		font-size:10px;
-		 color: #fdfdfd;
-
+		font-size: 22px;
+		color: #fdfdfd;
 	}
+
 	p{
 		     color: #000000;
-	    font-weight: 400;
-	    font-size: 12px;
+		     font-weight: 400;
+		     font-size: 19px;
+		     line-height:  18px;
 	}
 	.start{
 	font-size:10px;

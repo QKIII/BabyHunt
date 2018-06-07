@@ -47,7 +47,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 start">
-                	<a id="start" class="submit">👍</a>
+                    <a id="start" class="submit">👍</a>
+                    <p>HIT ME BABY</p>
                 </div>
             </div>
         </div>
@@ -55,9 +56,9 @@
 
         <div class="container">
             <div id="q1" class="question">
-                <h2>
+                <h1>
                     Hunt 1
-                </h2>
+                </h1>
                 <p>
                     Dramatically engineer tactical collaboration and idea-sharing through multifunctional outsourcing. Synergistically optimize standards compliant technology through client-centric total linkage. Conveniently customize high-quality relationships rather than front-end.
                 </p>
@@ -67,14 +68,38 @@
         </div>
         <div class="container">
             <div id="q2" class="question">
-                <h2>
+                <h1>
                     Hunt 2
-                </h2>
+                </h1>
                 <p>
                     Dramatically engineer tactical collaboration and idea-sharing through multifunctional outsourcing. Synergistically optimize standards compliant technology through client-centric total linkage. Conveniently customize high-quality relationships rather than front-end.
                 </p>
                 <input id="answer2" type="text" name="Answer2">
                 <a id="yes2" class="submit">👍</a>
+            </div>
+        </div>
+        <div class="container">
+            <div id="q3" class="question">
+                <h1>
+                    Hunt 3
+                </h1>
+                <p>
+                    Dramatically engineer tactical collaboration and idea-sharing through multifunctional outsourcing. Synergistically optimize standards compliant technology through client-centric total linkage. Conveniently customize high-quality relationships rather than front-end.
+                </p>
+                <input id="answer3" type="text" name="Answer3">
+                <a id="yes3" class="submit">👍</a>
+            </div>
+        </div>
+        <div class="container">
+            <div id="q4" class="question">
+                <h1>
+                    Hunt 4
+                </h1>
+                <p>
+                    Dramatically engineer tactical collaboration and idea-sharing through multifunctional outsourcing. Synergistically optimize standards compliant technology through client-centric total linkage. Conveniently customize high-quality relationships rather than front-end.
+                </p>
+                <input id="answer4" type="text" name="Answer4">
+                <a id="yes4" class="submit">👍</a>
             </div>
         </div>
     <script>
@@ -88,6 +113,7 @@
                         $("#info").fadeOut(500)
                         $("#q1").delay(500).fadeIn(500)                     
                 });
+
                 $("#yes1").click(function(event) {
                     if ($("#answer1").val().toUpperCase()=="ANSWER") {
                         $("#q1").fadeOut(500)                      
@@ -102,7 +128,35 @@
                     }
                 });
                 
-                
+                $("#yes2").click(function(event) {
+                    if ($("#answer2").val().toUpperCase()=="ANSWER") {
+                        $("#q2").fadeOut(500)                      
+                        $("#q3").delay(500).fadeIn(500)  
+                        }
+                    else{
+                        $("#q2").addClass("shake").delay(500).queue(function(){
+                          $("#q2").removeClass("shake");
+                          $("#q2").dequeue();
+                    })
+                        $("#answer2").val("")
+                    }
+                });
+
+                $("#yes3").click(function(event) {
+                    if ($("#answer3").val().toUpperCase()=="ANSWER") {
+                        $("#q3").fadeOut(500)                      
+                        $("#q4").delay(500).fadeIn(500)  
+                        }
+                    else{
+                        $("#q3").addClass("shake").delay(500).queue(function(){
+                          $("#q3").removeClass("shake");
+                          $("#q3").dequeue();
+                    })
+                        $("#answer3").val("")
+                    }
+                });
+
+
 
 
 
