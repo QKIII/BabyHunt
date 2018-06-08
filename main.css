@@ -68,8 +68,6 @@ body {
 
 }
 .start{
-	margin-top:30px;
-	padding-top:30px;
 	font-size:3vw;
 }
 .container{
@@ -141,6 +139,7 @@ h1{
 	    text-align:  center;
 	    color: #ffffff;
 	    font-size:4vw;
+
 }
 h2{
 	text-align:  center;
@@ -154,14 +153,20 @@ p{
 	     text-align:  center;
 	     mix-blend-mode: multiply;
 }
+.info{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.info>.col-sm-12>h1{
+        line-height: 60px;
+}
 
 .start>p{
 	    letter-spacing: 9px;
-    font-size: 15px;
-    padding-top: 10px;
+	    font-size: 19px;
 }
 .steps{
-	margin-top: 40px;
+	margin-top: 25px;
 }
 .question.shake{
 
@@ -179,6 +184,13 @@ p{
 }
 .final>.submit{
 	display:inline;
+}
+#sign{
+  border: 1px solid white;
+  text-align: left;
+  max-width: 300px;
+  padding: 11px;
+  margin: 0 auto;
 }
 
 @keyframes shake {
@@ -211,21 +223,28 @@ p{
 {
 	h1{
 		    color: #fdfdfd;
-		    font-size:40px;
+		    font-size:50px;
 	}
+	.info>.col-sm-12>h1{
+        line-height: 50px;
+}
 	h2{
-		font-size: 22px;
+		font-size: 30px;
 		color: #fdfdfd;
+		margin-top: 5px;
 	}
 
 	p{
-		     color: #000000;
+		     color: #ffffff;
 		     font-weight: 400;
 		     font-size: 19px;
-		     line-height:  18px;
+		     line-height:  24px;
 	}
 	.start{
 	font-size:10px;
+}
+.steps {
+    margin-top: 0px;
 }
 .container{
   position: relative;
