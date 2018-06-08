@@ -173,7 +173,7 @@
             </div>
         </div>
         <div class="container">
-            <div id="q10" class="question">
+            <div id="q10" class="question final">
                 <i class="fas fa-map-marker-alt fa-3x"></i>
                 <h1>
                     Get Ready
@@ -181,26 +181,35 @@
                 <p>
                     Check if we're home. We wanna celebrate with you.
                 </p>
-                <<p>Are we home?</p>
-                <input id="answer10" type="text" name="Answer10">
+                <p>Are we home?</p>
                 <a id="yes10" class="submit">👍</a>
-                <a id="no10" class="submit">👍</a>
+                <a id="no10" class="submit">👎</a>
                 
             </div>
         </div>
+        <div class="container">
+            <div id="bm" class="question bm">
+
+            </div>
+        </div>
+        
+    <!-- Lottie JS -->
+    <script type="text/javascript" src="lottie.js"></script>
+    <!-- animation script -->
+    <script src="index.js"></script>
     <script>
     	    $(document).ready(function() {
 
-                $("#q1").hide() 
-                $("#q2").hide() 
-                $("#q3").hide() 
-                $("#q4").hide() 
-                $("#q5").hide() 
-                $("#q6").hide() 
-                $("#q7").hide() 
-                $("#q8").hide() 
-                $("#q9").hide() 
-                $("#q10").hide() 
+                // $("#q1").hide() 
+                // $("#q2").hide() 
+                // $("#q3").hide() 
+                // $("#q4").hide() 
+                // $("#q5").hide() 
+                // $("#q6").hide() 
+                // $("#q7").hide() 
+                // $("#q8").hide() 
+                // $("#q9").hide() 
+                // $("#q10").hide() 
                 $("#start").click(function(event) {
                         $("#info").fadeOut(500)
                         $("#q1").delay(500).fadeIn(500)                     
@@ -333,10 +342,12 @@
                 });
 
                 $("#yes10").click(function(event) {
-                 
+                    $("#q10").fadeOut(500)                      
+                    $("#bm").delay(500).fadeIn(500) 
                     })
                 $("#no10").click(function(event) {
-                 
+                    $("#q10").fadeOut(500)                      
+                    $("#bm").delay(500).fadeIn(500) 
                     })
 
 

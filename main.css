@@ -88,7 +88,7 @@ body {
 }
 
 .submit{
-	display: block;
+	display: inline;
 	width:  100%;
 	font-size:50px;
 	text-align:  center;
@@ -176,6 +176,9 @@ p{
 }
 .question>svg>path{
 	fill:white;
+}
+.final>.submit{
+	display:inline;
 }
 
 @keyframes shake {
